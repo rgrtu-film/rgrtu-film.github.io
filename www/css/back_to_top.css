@@ -1,0 +1,42 @@
+/* Back to top button */
+#back-top {
+	position: fixed;
+	bottom: 80px;
+	right: 10px;
+}
+#back-top a {
+	width: 80px;
+	display: block;
+	text-align: center;
+	font: 11px/100% Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #000;
+	font-weight: bold;
+	
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+#back-top a:hover {
+	color: #000;
+}
+
+/* arrow icon (span tag) */
+#back-top span {
+	width: 80px;
+	height: 80px;
+	display: block;
+	margin-bottom: 7px;
+	background: url(../img/up-arrow.png) no-repeat center center;
+	/* rounded corners */
+	/* background color transition */
+	-webkit-transition: 1s;
+	-moz-transition: 1s;
+	transition: 1s;
+}
+
+#reg_form {
+	display: none;
+}
