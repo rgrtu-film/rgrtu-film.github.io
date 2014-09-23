@@ -14,6 +14,9 @@
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/back_to_top.css" rel="stylesheet">
 		<link href="css/responsive.css" rel="stylesheet">
+        
+        <!-- Background Video -->
+        <link href="css/YTPlayer.css" media="all" rel="stylesheet" type="text/css">
 		
 		<!-- Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
@@ -45,8 +48,10 @@
 			
 			google.maps.event.addDomListener(window, 'load', initialize); 
 		</script>
+        
 	</head>
 	<body id="top">
+        <a class="player" data-property="{videoURL:rndVideo,containment:'body',autoPlay:true, mute:true, startAt:7, opacity:0.8, showControls:false,  addRaster:true, quality:'medium'}">Bg video</a>
 		<!-- Navigatoin -->
 		<div class="container-fluid">
 			<div class="row">
@@ -140,7 +145,16 @@
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
-		<script src="js/bootstrap.min.js"></script>
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+        
+        <!-- Background video -->
+        <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>	
+        <script>
+            var videos = ["hkdPLpLBGnA", "KGk5OCROXzw","FgetliSQCUM"];       
+            var rndVideo = videos[Math.floor(Math.random()* videos.length)];
+            
+            jQuery(".player").mb_YTPlayer();
+        </script>        
 
 		<script src="js/back_to_top.js"></script>	
 	</body>
