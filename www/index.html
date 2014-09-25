@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Народная киностудия РГРТУ-Фильм им. Г.В.Рязанцева</title>
-		<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico" /> 
+		<link rel="shortcut icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
 		<link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico" />
 
 		<!-- Bootstrap -->
@@ -14,10 +14,10 @@
 		<link href="css/style.css" rel="stylesheet">
 		<link href="css/back_to_top.css" rel="stylesheet">
 		<link href="css/responsive.css" rel="stylesheet">
-        
+
         <!-- Background Video -->
         <link href="css/YTPlayer.css" media="all" rel="stylesheet" type="text/css">
-		
+
 		<!-- Fonts -->
 		<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700,300&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 
@@ -28,27 +28,27 @@
 		<script type="text/javascript">
 			function initialize() {
 				var markerLatLng = new google.maps.LatLng(54.609903, 39.71923);
-			
+
 				var mapOptions = {
 					center: markerLatLng,
 					zoom: 16,
 					mapTypeId: google.maps.MapTypeId.ROADMAP,
 					scrollwheel: false
 				};
-				
+
 				var map = new google.maps.Map(document.getElementById("map_canvas"),
 						mapOptions);
-						
+
 				var marker = new google.maps.Marker({
 						position: markerLatLng,
 						map: map,
 						title: 'Киностудия "РГРТУ-Фильм"'
 				});
 			}
-			
-			google.maps.event.addDomListener(window, 'load', initialize); 
+
+			google.maps.event.addDomListener(window, 'load', initialize);
 		</script>
-        
+
 	</head>
 	<body id="top">
         <a class="player" data-property="{videoURL:rndVideo,containment:'body',autoPlay:true, mute:true, startAt:7, opacity:0.8, showControls:false,  addRaster:true, quality:'medium'}">Bg video</a>
@@ -64,17 +64,17 @@
 				</nav>
 			</div>
 		</div>
-			
+
 		<!-- Header -->
 		<div class="container">
 			<img class="logo" src="img/logo.png" alt="Логотип Киностудия РГРТУ-Фильм" />
-			
+
 			<h1>Народная киностудия<br />РГРТУ-Фильм им. Г.В.Рязанцева</h1>
 			<div class="icon-hot">
 				<a href="https://vk.com/rgrtu_tv" target="_blank"><span class="icon-vk"></span></a>
-				<a href="https://vk.com/rgrtu_tv" target="_blank"><span class="icon-youtube"></span></a>
+				<a href="https://www.youtube.com/user/rgrtufilm" target="_blank"><span class="icon-youtube"></span></a>
 			</div>
-			
+
 		</div>
 
 		<!-- Text about -->
@@ -142,21 +142,21 @@
 		<div id="back-top">
 			<a href="#top"><span></span></a>
 		</div>
-		
+
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="js/bootstrap/bootstrap.min.js"></script>
-        
-        <!-- Background video -->
-        <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>	
-        <script>
-            var videos = ["hkdPLpLBGnA", "KGk5OCROXzw","FgetliSQCUM"];       
-            var rndVideo = videos[Math.floor(Math.random()* videos.length)];
-            
-            jQuery(".player").mb_YTPlayer();
-        </script>        
 
-		<script src="js/back_to_top.js"></script>	
+        <!-- Background video -->
+        <script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
+        <script>
+            var videos = ["hkdPLpLBGnA", "KGk5OCROXzw","FgetliSQCUM"];
+            var rndVideo = videos[Math.floor(Math.random()* videos.length)];
+
+            jQuery(".player").mb_YTPlayer();
+        </script>
+
+		<script src="js/back_to_top.js"></script>
 	</body>
 </html>
