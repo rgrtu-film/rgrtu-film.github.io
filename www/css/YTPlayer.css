@@ -240,9 +240,9 @@
 }
 
 .YTPOverlay.raster{
-  background: url("../img/bg_pattern_white.png");
+  background: url("../img/dark-overlay-pat.png");
 }
 
 .YTPOverlay.raster.retina{
-  background: url("../img/raster@2x.png");
+  background: url("../img/dark-overlay-pat.png");
 }

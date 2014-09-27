@@ -32,6 +32,10 @@
 	content: "\f189";
 }
 
+.icon-twitter:before {
+	content: "\e605";
+}
+
 /* SYSTEM -------------------------------------------------- */
 .container-fluid {
 	padding-right: 0;
@@ -43,24 +47,84 @@
 	margin-left: 0;
 }
 
-/* HEAD -------------------------------------------------- */
-.logo {
-	width: 300px;
-	display: block;
-	margin: 0 auto;
+/* ALL -------------------------------------------------- */
+body {
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
-	font-family: 'Comfortaa', sans-serif;
-	color: #1B4E9B;
+	font-weight: bold;
+	color: #fff;
 	text-align: center;
+	margin: 50px 0;
+}
+
+h2 {
+	font-weight: bold;
+	color: #fff;
+}
+
+h3 {
+	color: #fff;
+	text-align: center;
+}
+
+/* HEAD -------------------------------------------------- */
+.menu {
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin: 40px 10px;
+	float: right;
+}
+
+	.menu a {
+		 color: #fff;
+		 margin: 0 10px;
+	}
+
+	.menu a:hover {
+		border-bottom: 2px solid;
+		padding-bottom: 10px;
+		text-decoration: none;
+	}
+
+.logo {
+	width: 500px;
+	display: block;
+	margin: 80px auto;
+
 }
 
 .icon-hot {
 	text-align: center;
 	font-size: 58px;
+	margin: 80px 0;
 }
 
+	.icon-hot a {
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.icon-hot a :hover {
+		color: #587196;
+		text-decoration: none;
+	}
+
+/* NEXT ABOUT -------------------------------------------------- */
+.about {
+	background-color: #587196;
+	color: #fff;
+	padding-bottom: 20px;
+}
+
+/* DIREDTION -------------------------------------------------- */
+.img-icon {
+	width: 200px;
+	margin: 0 auto;
+	display: inline-block;
+}
 
 /* GOOGLE MAP -------------------------------------------------- */
 .google-map {
@@ -69,7 +133,35 @@ h1 {
 
 /* FOOTER -------------------------------------------------- */
 .footer {
-	background: #0088CE;
+	background: #587196;
 	padding: 25px;
 	font-size: 16px;
+	color: #fff;
 }
+
+.footter-right  {
+	position: relative;
+	height: 70px;
+}
+
+.autor {
+	position: absolute;
+	bottom: 0;
+	display: block;
+}
+
+.footter-left {
+	padding: 0;
+	list-style: none;
+}
+
+	.footter-left a {
+		color: #fff;
+		border-bottom: 1px solid transparent;
+	}
+
+.social-links {
+	font-size: 30px;
+	margin: 10px;
+}
+
