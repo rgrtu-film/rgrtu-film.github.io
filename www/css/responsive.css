@@ -1,4 +1,80 @@
-/* HEAD -------------------------------------------------- */
-@media screen and (max-width: 480px) {
-	
+@media screen and (max-width: 768px) {
+	/* head */
+	h1 {
+		font-size: 26px;
+		margin: 20px 0;
+	}
+
+	.logo {
+		width: 300px;
+		margin: 0 auto;
+	}
+
+	.icon-hot {
+		font-size: 30px;
+		margin: 40px 0;
+	}
+
+	/* directions */
+	h2 {
+		text-align: center;
+	}
+
+	h3 {
+		height: auto;
+	}
+	.directions-wrap {
+		margin-top: 20px;
+	}
+
+	.row-wrap {
+		margin-bottom: 20px;
+	}
+
+	.about {
+		padding: 0 10px 20px 10px;
+	}
+
+	/* footer */
+	.footer-left {
+		display: none;
+	}
+
+	.footer-right {
+		position: static;
+		height: auto;
+	}
+
+	.autor {
+		position: static;
+		display: block;
+	}
+
+}
+
+@media screen and (max-width: 465px) {
+	.menu {
+		font-size: 16px;
+		margin: 40px 0;
+		float: none;
+	}
+
+		.menu a {
+			margin: 5px 0;
+			display: block;
+			text-align: center;
+		}
+
+		.menu a:hover {
+			border-bottom: none;
+			padding-bottom: 0;
+		}
+
+	.logo {
+		width: 200px;
+	}
+
+	h1 {
+		display:none;
+	}
 }

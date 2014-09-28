@@ -67,6 +67,7 @@ h2 {
 h3 {
 	color: #fff;
 	text-align: center;
+	height: 50px;
 }
 
 /* HEAD -------------------------------------------------- */
@@ -112,18 +113,50 @@ h3 {
 		text-decoration: none;
 	}
 
-/* NEXT ABOUT -------------------------------------------------- */
+/* TEXT ABOUT -------------------------------------------------- */
 .about {
 	background-color: #587196;
 	color: #fff;
 	padding-bottom: 20px;
+	opacity: 0.9;
 }
 
 /* DIREDTION -------------------------------------------------- */
 .img-icon {
 	width: 200px;
 	margin: 0 auto;
+	display: block;
+}
+
+.directions {
+	margin: 20px 0;
+}
+
+.group {
+	text-align: center;
+	color: #fff;
+	height: 30px;
+}
+
+.directions-wrap {
+	margin-top: 30px;
+}
+
+.row-wrap {
+	margin-bottom: 30px;
+}
+
+.group-vk {
+	color: #fff;
+	font-size: 26px;
+	text-align: center;
 	display: inline-block;
+}
+
+.group-vk:hover {
+	color: #fff;
+	text-decoration: none;
+	/* TODO при наведении обводка круг, выравнивание по центру */
 }
 
 /* GOOGLE MAP -------------------------------------------------- */
@@ -135,13 +168,13 @@ h3 {
 .footer {
 	background: #587196;
 	padding: 25px;
-	font-size: 16px;
 	color: #fff;
+	opacity: 0.9;
 }
 
-.footter-right  {
+.footer-right {
 	position: relative;
-	height: 70px;
+	height: 100px;
 }
 
 .autor {
@@ -150,14 +183,20 @@ h3 {
 	display: block;
 }
 
-.footter-left {
+.footer-left {
 	padding: 0;
 	list-style: none;
 }
 
-	.footter-left a {
+	.footer-left a {
 		color: #fff;
+		display: inline-block;
+		text-decoration: none;
+	}
+
+	.footer-left a:hover {
 		border-bottom: 1px solid transparent;
+		border-color: #fff;
 	}
 
 .social-links {
@@ -165,3 +204,11 @@ h3 {
 	margin: 10px;
 }
 
+/* TODO равнение относительно одного цетнтра по вертикали у иконок соц сетей и надписей */
+/* TODO при наведении на текст, чтобы не дергался */
+
+
+
+/* TODO анимировать сайт, добавить плавности при наведении на все элементы */
+/* TODO для точечек версию ретины */
+/* TODO картинки на фон, как запасной вариант видео */
