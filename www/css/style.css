@@ -50,6 +50,9 @@
 /* ALL -------------------------------------------------- */
 body {
 	font-family: 'Open Sans', sans-serif;
+	background-image: url(../img/background/1gg.jpg);
+	background-size: 100%;
+	background-attachment: fixed;
 }
 
 h1 {
