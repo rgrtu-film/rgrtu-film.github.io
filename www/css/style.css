@@ -202,10 +202,38 @@ h3 {
 		border-color: #fff;
 	}
 
-.social-links {
-	font-size: 30px;
-	margin: 10px;
+.social-links a {
+	position: relative;
+	display: inline-block;
+	margin: 10px 0 10px 58px;
+	border-bottom: 1px solid transparent; 
+
+    color: white;
+    line-height: 20px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
 }
+
+.social-links a:before {
+	font-size: 30px;
+
+	position: absolute;
+	display: block;
+	width: 48px;
+	height: 48px;
+	color: white;
+	left: -58px;
+	top: -14px;
+	text-align: center;
+	line-height: 48px; 
+}
+
+/* Костыль, но похоже у контакта кривой значок в шрифте*/
+.footer-left .icon-vk:before {
+	margin-left: -3px;
+}
+
 
 /* TODO равнение относительно одного цетнтра по вертикали у иконок соц сетей и надписей */
 /* TODO при наведении на текст, чтобы не дергался */
