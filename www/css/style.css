@@ -53,8 +53,17 @@ body {
 	background-image: url(../img/background/1gg.jpg);
     background-position: center center;
     background-repeat: no-repeat;
-	background-size: cover;
+	/*background-size: cover;*/
 	background-attachment: fixed;
+
+	-webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
 }
 
 h1 {
@@ -260,6 +269,14 @@ h3 {
     -moz-transform:scale(1.5,1.5);
 }
 
+.bg_image {
+    height: 100%;
+    width: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
 
 /* TODO равнение относительно одного цетнтра по вертикали у иконок соц сетей и надписей */
 /* TODO при наведении на текст, чтобы не дергался */

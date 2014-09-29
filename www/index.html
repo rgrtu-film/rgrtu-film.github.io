@@ -51,10 +51,11 @@
 
 	</head>
 	<body id="top">
+		<img src="../img/background/1gg.jpg" class="bg_image"/>
 		<!-- Overlay -->
 		<div class="YTPOverlay raster" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; z-index:-1"></div>
 		<!-- Фоновое видео -->
-		<a class="player" data-property="{videoURL:rndVideo,containment:'body',autoPlay:true, mute:true, startAt:7, opacity:1, showControls:false, quality:'medium'}">Bg video</a>
+		<a class="player" data-property="{videoURL:rndVideo,containment:'body',autoPlay:true, mute:true, startAt:7, opacity:1, showControls:false, quality:'medium'}"> </a>
 
 		<div class="container">
 			<!-- Navigation -->
@@ -184,10 +185,14 @@
 		<!-- Background video -->
 		<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
 		<script>
-			var videos = ["hkdPLpLBGnA", "KGk5OCROXzw","FgetliSQCUM"];
-			var rndVideo = videos[Math.floor(Math.random()* videos.length)];
+			if (screen.width >= 600) { //Только на больших устройствах
+				var videos = ["hkdPLpLBGnA", "KGk5OCROXzw","FgetliSQCUM"];
+				var rndVideo = videos[Math.floor(Math.random()* videos.length)];
 
-			jQuery(".player").mb_YTPlayer();
+				jQuery(".player").mb_YTPlayer();
+			} else {
+				$('.player').hide();
+			}
 		</script>
 
 		<script src="js/back_to_top.js"></script>
@@ -208,6 +213,16 @@
 			    }
 			  });
 			});	
+		</script>
+
+		<!-- Адский хак для фона страницы на мобильных -->
+		<script>
+			if (screen.width < 600) { //Только на больших устройствах
+				var w = $('body').width();
+				$('.bg_image').css('left',-1*w/2);				
+			} else {
+				$('.bg_image').hide();
+			}
 		</script>
 	</body>
 </html>
