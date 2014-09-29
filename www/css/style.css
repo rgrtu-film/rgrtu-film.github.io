@@ -117,6 +117,12 @@ h3 {
 		text-decoration: none;
 	}
 
+	.icon-hot a span {
+		-webkit-transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		transition: all 0.2s ease-in-out;
+	}
+
 	.icon-hot a :hover {
 		color: #587196;
 		text-decoration: none;
