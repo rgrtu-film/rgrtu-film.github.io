@@ -149,6 +149,7 @@ h3 {
 
 .directions-wrap {
 	margin-top: 30px;
+	text-align: center;
 }
 
 .row-wrap {
@@ -238,6 +239,17 @@ h3 {
 /* Костыль, но похоже у контакта кривой значок в шрифте*/
 .footer-left .icon-vk:before {
 	margin-left: -3px;
+}
+
+.direction-social {
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.direction-social:hover {
+	transform: scale(1.5,1.5);
+	-webkit-transform: scale(1.5,1.5);
+    -moz-transform:scale(1.5,1.5);
 }
 
 
