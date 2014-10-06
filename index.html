@@ -161,7 +161,7 @@
 							<li><a class="icon-vk"      href="https://vk.com/rgrtu_tv" target="_blank">vk.com/rgrtu_tv</a></li>
 							<li><a class="icon-youtube" href="https://www.youtube.com/user/rgrtufilm/" target="_blank">youtube.com/user/rgrtufilm/</a></li>
 							<li><a class="icon-twitter" href="https://twitter.com/rgrtutv" target="_blank">twitter.com/rgrtutv</a></li>
-						</ul>					
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -184,16 +184,7 @@
 
 		<!-- Background video -->
 		<script type="text/javascript" src="js/jquery.mb.YTPlayer.js"></script>
-		<script>
-			if (screen.width >= 600) { //Только на больших устройствах
-				var videos = ["hkdPLpLBGnA", "KGk5OCROXzw","FgetliSQCUM"];
-				var rndVideo = videos[Math.floor(Math.random()* videos.length)];
-
-				jQuery(".player").mb_YTPlayer();
-			} else {
-				$('.player').hide();
-			}
-		</script>
+		<script type="text/javascript" src="js/video_bg.js"></script>
 
 		<script src="js/back_to_top.js"></script>
 
@@ -212,14 +203,14 @@
 			      }
 			    }
 			  });
-			});	
+			});
 		</script>
 
 		<!-- Адский хак для фона страницы на мобильных -->
 		<script>
 			if (screen.width < 600) { //Только на больших устройствах
 				var w = $('body').width();
-				$('.bg_image').css('left',-1*w/2);				
+				$('.bg_image').css('left',-1*w/2);
 			} else {
 				$('.bg_image').hide();
 			}
@@ -251,6 +242,6 @@
 		})(document, window, "yandex_metrika_callbacks");
 		</script>
 		<noscript><div><img src="//mc.yandex.ru/watch/26388966" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-		<!-- /Yandex.Metrika counter -->				
+		<!-- /Yandex.Metrika counter -->
 	</body>
 </html>
