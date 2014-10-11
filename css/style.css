@@ -10,7 +10,7 @@
 	font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="icon-"]:before {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
