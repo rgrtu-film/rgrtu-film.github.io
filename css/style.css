@@ -199,7 +199,7 @@ h3 {
 	opacity: 0.9;
 }
 
-.footer-right {
+.footer-left {
 	position: relative;
 	height: 115px;
 }
@@ -210,18 +210,18 @@ h3 {
 	display: block;
 }
 
-.footer-left {
+.footer-right {
 	padding: 0;
 	list-style: none;
 }
 
-	.footer-left a {
+	.footer-right a {
 		color: #fff;
 		display: inline-block;
 		text-decoration: none;
 	}
 
-	.footer-left a:hover {
+	.footer-right a:hover {
 		border-bottom: 1px solid transparent;
 		border-color: #fff;
 	}
@@ -254,7 +254,7 @@ h3 {
 }
 
 /* Костыль, но похоже у контакта кривой значок в шрифте*/
-.footer-left .icon-vk:before {
+.footer-right .icon-vk:before {
 	margin-left: -3px;
 }
 
