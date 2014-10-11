@@ -226,6 +226,10 @@ h3 {
 		border-color: #fff;
 	}
 
+	ul.footer-right {
+		margin-bottom: 0px;
+	}
+
 .social-links a {
 	position: relative;
 	display: inline-block;
