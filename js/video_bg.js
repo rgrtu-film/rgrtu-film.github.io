@@ -11,7 +11,7 @@ BgVideo.prototype.play = function() {
 	            {videoURL:this.youtubeCode,
 								containment:'body',
 								autoPlay:true,
-								mute:false,
+								mute:true,
 								startAt:this.startAt,
 								opacity:1,
 								loop:true,
